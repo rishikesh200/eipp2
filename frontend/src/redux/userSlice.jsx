@@ -45,7 +45,7 @@ export const { setField, setErrors, setMessage, setUsers, resetForm } = userSlic
 export const submitUser = (formData, navigate) => async (dispatch) => {
   try {
     dispatch(setErrors({}));
-    const res = await axios.post('http://localhost:5057/api/users/register', formData);
+    const res = await axios.post('https://eipp2.onrender.com/api/users/register', formData);
     dispatch(setMessage('User registered successfully '));
 
     //  Reset form after success
@@ -68,7 +68,7 @@ export const submitUser = (formData, navigate) => async (dispatch) => {
 //  Fetch all users
 export const fetchUsers = () => async (dispatch) => {
   try {
-    const res = await axios.get('http://localhost:5057/api/users');
+    const res = await axios.get('https://eipp2.onrender.com/api/users');
     dispatch(setUsers(res.data));
   } catch (err) {
     console.error('Failed to fetch users:', err);
