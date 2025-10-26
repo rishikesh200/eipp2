@@ -1,0 +1,87 @@
+.userlist_container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.userlist_title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.userlist_add-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+.userlist_add-btn:hover {
+  background-color: #0056b3;
+}
+
+.userlist_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.userlist_table th,
+.userlist_table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.userlist_table th {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 600;
+}
+
+.userlist_table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.userlist_action-btn {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-right: 6px;
+  transition: background 0.2s ease;
+}
+
+.userlist_action-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .userlist_table th,
+  .userlist_table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .userlist_add-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
